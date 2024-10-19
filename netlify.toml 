@@ -1,0 +1,9 @@
+[build]
+  command = "yarn build"
+  publish = ".output/public"
+  functions = ".netlify/functions-internal"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200
