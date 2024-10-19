@@ -12,5 +12,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  nitro: {
+    preset: 'netlify' // Ensure Nitro targets Netlify serverless
+  },
   ssr: true,
 })
